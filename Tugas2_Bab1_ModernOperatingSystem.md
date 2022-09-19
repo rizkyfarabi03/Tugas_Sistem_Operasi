@@ -37,7 +37,7 @@ programs. We will come back to the difference between kernel mode and user
 mode repeatedly throughout this book. It plays a crucial role in how operating systems work
 <center>
 
-![informasi foto](g1.1.jpg)
+![informasi foto](gambar/g1.1.jpg)
 
 </center>
 The user interface program, shell or GUI, is the lowest level of user-mode software, and allows the user to start other programs, such as a Web browser, email
@@ -137,7 +137,7 @@ programmers) with nice, clean, elegant, consistent, abstractions to work with in
 <center>
 
 ### WHAT IS AN OPERATING SYSTEM  
-![informasi gambar](g1.2.jpg)</center>
+![informasi gambar](gambar/g1.2.jpg)</center>
 
 It should be noted that the operating system’s real customers are the application programs (via the application programmers, of course). They are the ones
 who deal directly with the operating system and its abstractions. In contrast, end
@@ -271,7 +271,7 @@ operating system automatically read the next job from the tape and began running
 
 <center>
 
-![informasi gambar](g1.3.JPG)</center>
+![informasi gambar](gambar/g1.3.JPG)</center>
 
 it. When the whole batch was done, the operator removed the input and output
 tapes, replaced the input tape with the next batch, and brought the output tape to a
@@ -294,7 +294,7 @@ By the early 1960s, most computer manufacturers had two distinct, incompatible,
 
 <center>
 
-![informasi gambar](g1.4.JPG)</center>
+![informasi gambar](gambar/g1.4.JPG)</center>
 character-oriented, commercial computers, such as the 1401, which were widely
 used for tape sorting and printing by banks and insurance companies.
 Developing and maintaining two completely different product lines was an expensive proposition for the manufacturers. In addition, many new computer customers initially needed a small machine but later outgrew it and wanted a bigger
@@ -354,7 +354,7 @@ third-generation systems were equipped with this hardware.
 
 <center>
 
-![informasi gambar](g1.5.JPG)</center>
+![informasi gambar](gambar/g1.5.JPG)</center>
 
 Another major feature present in third-generation operating systems was the
 ability to read jobs from cards onto the disk as soon as they were brought to the
@@ -646,7 +646,7 @@ hardware and computer organization. Two well-known ones are by Tanenbaum
 and Austin (2012) and Patterson and Hennessy (2013).
 <center>
 
-![information gambar](g1.6.JPG)
+![information gambar](gambar/g1.6.JPG)
 
 ## __1.3.1 Processors__</center>
 The ‘‘brain’’ of the computer is the CPU. It fetches instructions from memory
@@ -688,7 +688,7 @@ have to deal with them.
 
 <center>
 
-![information gambar](g1.7.JPG)</center>
+![information gambar](gambar/g1.7.JPG)</center>
 
 Even more advanced than a pipeline design is a superscalar CPU, shown in
 Fig. 1-7(b). In this design, multiple execution units are present, for example, one
@@ -766,7 +766,7 @@ system itself will run on the GPUs.
 
 <center>
 
-![information gambar](g1.8.JPG)
+![information gambar](gambar/g1.8.JPG)
 
 ## __1.3.2 Memory__</center>
 The second major component in any computer is the memory. Ideally, a memory should be extremely fast (faster than executing an instruction so that the CPU is
@@ -778,7 +778,7 @@ the same material as the CPU and are thus just as fast as the CPU. Consequently,
 there is no delay in accessing them. The storage capacity available in them is 
 <center>
 
-![information gambar](g1.9.JPG)</center>
+![information gambar](gambar/g1.9.JPG)</center>
 
 typically 32 × 32 bits on a 32-bit CPU and 64 × 64 bits on a 64-bit CPU. Less than
 1 KB in both cases. Programs must manage the registers (i.e., decide what to keep
@@ -872,7 +872,7 @@ as shown in Fig. 1-10.
 
 <center>
 
-![informasi gambar](g2.1.JPG)</center>
+![informasi gambar](gambar/g2.1.JPG)</center>
 
 A disk consists of one or more metal platters that rotate at 5400, 7200, 10,800
 RPM or more. A mechanical arm pivots over the platters from the corner, similar
@@ -987,7 +987,7 @@ puts the number of the device on the bus so the CPU can read it and know which
 device has just finished (many devices may be running at the same time).
 <center>
 
-![information gambar](g2.2.JPG)</center>
+![information gambar](gambar/g2.2.JPG)</center>
 
 Once the CPU has decided to take the interrupt, the program counter and PSW
 are typically then pushed onto the current stack and the CPU switched into kernel
@@ -1021,7 +1021,7 @@ added, both for faster I/O devices and for CPU-to-memory traffic. As a conseque
 Fig. 1-12.
 <center>
 
-![informasi gambar](g2.3.JPG)</center>
+![informasi gambar](gambar/g2.3.JPG)</center>
 
 This system has many buses (e.g., cache, memory, PCIe, PCI, USB, SATA, and
 DMI), each with a different transfer rate and function. The operating system must
@@ -1306,7 +1306,7 @@ their activities. This communication is called interprocess communication, and
 will be addressed in detail in Chap. 2.
 <center>
 
-![informasi gambar](g2.4.JPG)</center>
+![informasi gambar](gambar/g2.4.JPG)</center>
 
 Other process system calls are available to request more memory (or release
 unused memory), wait for a child process to terminate, and overlay its program
@@ -1367,7 +1367,7 @@ directories. Calls are also provided to put an existing file in a directory and 
 Fig. 1-14
 <center>
 
-![informasi gambar](g2.5.JPG)</center>
+![informasi gambar](gambar/g2.5.JPG)</center>
 
 The process and file hierarchies both are organized as trees, but the similarity
 stops there. Process hierarchies usually are not very deep (more than three levels is
@@ -1413,7 +1413,7 @@ always mounted on empty directories.) If a system contains multiple hard disks,
 they can all be mounted into a single tree as well.
 <center>
 
-![informasi gambar](g2.6.JPG)</center>
+![informasi gambar](gambar/g2.6.JPG)</center>
 
 Another important concept in UNIX is the special file. Special files are provided in order to make I/O devices look like files. That way, they can be read and
 written using the same system calls as are used for reading and writing files. Two
@@ -1433,7 +1433,7 @@ pipe, is by making a special system call. File systems are very important. We wi
 have much more to say about them in Chap. 4 and also in Chaps. 10 and 11.
 <center>
 
-![informasi gambar](g2.7.JPG)</center>
+![informasi gambar](gambar/g2.7.JPG)</center>
 
 ## __1.5.4 Input/Output__
 All computers have physical devices for acquiring input and producing output.
@@ -1661,7 +1661,7 @@ kernel mode and start execution at a fixed address within the kernel (step 6). T
 TRAP instruction is actually fairly similar to the procedure-call instruction in the
 <center>
 
-![informasi gambar](g2.8.JPG)</center>
+![informasi gambar](gambar/g2.8.JPG)</center>
 
 sense that the instruction following it is taken from a distant location and the return
 address is saved on the stack for use later.
@@ -1713,7 +1713,7 @@ value, which is zero in the child and equal to the child’s PID (Process IDenti
 in the parent. Using the returned PID, the two processes can see which one is the
 parent process and which one is the child process
 
-![informasi gambar](g2.9.JPG)
+![informasi gambar](gambar/g2.9.JPG)
 
 In most cases, after a fork, the child will need to execute different code from
 the parent. Consider the case of the shell. It reads a command from the terminal,
@@ -1736,7 +1736,7 @@ different names. We will treat these as system calls here.) A highly simplified 
 illustrating the use of fork, waitpid, and execve is shown in Fig. 1-19.
 <center>
 
-![informasi gambar](g3.1.JPG)</center>
+![informasi gambar](gambar/g3.1.JPG)</center>
 
 In the most general case, execve has three parameters: the name of the file to
 be executed, a pointer to the argument array, and a pointer to the environment
@@ -1784,7 +1784,7 @@ as well as a code of O RDONLY, O WRONLY, or O RDWR, meaning open for
 reading, writing, or both. To create a new file, the O CREAT parameter is used.
 <center>
 
-![informasi gambar](g3.2.JPG)</center>
+![informasi gambar](gambar/g3.2.JPG)</center>
 
 The file descriptor returned can then be used for reading or writing. Afterward, the
 file can be closed by close, which makes the file descriptor available for reuse on a
@@ -1823,7 +1823,7 @@ simply a decision made by the local system administrator.
 
 <center>
 
-![informasi gambar](g3.3.JPG)</center>
+![informasi gambar](gambar/g3.3.JPG)</center>
 
 Understanding how link works will probably make it clearer what it does.
 Every file in UNIX has a unique number, its i-number, that identifies it. This
@@ -1851,7 +1851,7 @@ second parameter is the place in the tree where it is to be mounted, and the thi
 parameter tells whether the file system is to be mounted read-write or read-only.
 <center>
 
-![informasi gambar](g3.4.JPG)</center>
+![informasi gambar](gambar/g3.4.JPG)</center>
 
 After the mount call, a file on drive 0 can be accessed by just using its path
 from the root directory or the working directory, without regard to which drive it is
@@ -1937,7 +1937,7 @@ Win32 has a huge number of other calls that UNIX does not have, especially for
 managing the GUI. Windows Vista has an elaborate security system and also supports file links. Windows 7 and 8 add yet more features and system calls
 <center>
 
-![informasi gambar](g3.5.JPG)</center>
+![informasi gambar](gambar/g3.5.JPG)</center>
 
 Figure 1-23. The Win32 API calls that roughly correspond to the UNIX calls of
 Fig. 1-18. It is worth emphasizing that Windows has a very large number of other system calls, most of which do not correspond to anything in UNIX.
@@ -1987,7 +1987,7 @@ Libraries). They hav e file extension .dll and the C:\Windows\system32 directory
 on Windows systems has well over 1000 of them.
 <center>
 
-![informasi gambar](g3.6.JPG)</center>
+![informasi gambar](gambar/g3.6.JPG)</center>
 
 ## __1.7.2 Layered Systems__
 A generalization of the approach of Fig. 1-24 is to organize the operating system as a hierarchy of layers, each one constructed upon the one below it. The first
@@ -2002,7 +2002,7 @@ basic multiprogramming of the CPU.
 
 <center>
 
-![informasi gambar](g3.7.JPG)</center>
+![informasi gambar](gambar/g3.7.JPG)</center>
 
 Layer 1 did the memory management. It allocated space for processes in main
 memory and on a 512K word drum used for holding parts of processes (pages) for
@@ -2079,7 +2079,7 @@ user mode, they do not have physical access to the I/O port space and cannot iss
 I/O commands directly. Instead, to program an I/O device, the driver builds a structure telling which values to write to which I/O ports and makes a kernel call telling
 <center>
 
-![informasi gambar](g3.8.JPG)</center>
+![informasi gambar](gambar/g3.8.JPG)</center>
 
 the kernel to do the write. This approach means that the kernel can check to see
 that the driver is writing (or reading) from I/O it is authorized to use. Consequently
@@ -2126,7 +2126,7 @@ sent and replies come back. Thus the client-server model is an abstraction that 
 be used for a single machine or for a network of machines.
 <center>
 
-![informasi gambar](g3.9.JPG)</center>
+![informasi gambar](gambar/g3.9.JPG)</center>
 
 Increasingly many systems involve users at their home PCs as clients and large
 machines elsewhere running as servers. In fact, much of the Web operates this
@@ -2153,7 +2153,7 @@ files and other nice features. Instead, they are exact copies of the bare hardwa
 
 <center>
 
-![informasi gambar](g4.1.JPG)</center>
+![informasi gambar](gambar/g4.1.JPG)</center>
 
 Because each virtual machine is identical to the true hardware, each one can
 run any operating system that will run directly on the bare hardware. Different virtual machines can, and frequently do, run different operating systems. On the original IBM VM/370 system, some ran OS/360 or one of the other large batch or
@@ -2197,7 +2197,7 @@ put up with now. Note that many authors use the terms interchangeably though.
 
 <center>
 
-![informasi gambar](g4.2.JPG)</center>
+![informasi gambar](gambar/g4.2.JPG)</center>
 
 While no one disputes the attractiveness of virtual machines today, the problem
 then was implementation. In order to run virtual machine software on a computer,
@@ -2364,7 +2364,7 @@ components of this process are illustrated in Fig. 1-30 for a program with three
 files and two header files. Although we have been discussing operating system development here, all of this applies to developing any large program.
 <center>
 
-![informasi gambar](g4.3.JPG)</center>
+![informasi gambar](gambar/g4.3.JPG)</center>
 
 ### __1.8.4 The Model of Run Time__
 Once the operating system binary has been linked, the computer can be
@@ -2465,7 +2465,7 @@ micro both begin with the letter ‘‘m,’’ a choice had to be made. Normall
 for milli and ‘‘μ’’ (the Greek letter mu) is for micro.
 <center>
 
-![informasi gambar](g4.4.JPG)</center>
+![informasi gambar](gambar/g4.4.JPG)</center>
 
 It is also worth pointing out that, in common industry practice, the units for
 measuring memory sizes have slightly different meanings. There kilo means 210
