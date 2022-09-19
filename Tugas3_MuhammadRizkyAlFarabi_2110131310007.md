@@ -138,7 +138,7 @@ Deteksi error adalah menjaga kestabilan sistem dengan mendeteksi “error”, pe
 
 - Cara membuat folder baru di Adobe Ilustrator 2019
     - Buka aplikasi Adobe Ilustrator 2019
-        <img src="img/ai2.png" style="width:40%">
+        - <img src="img/ai2.png" style="width:40%">
     - Maka akan muncul menu
         - <img src="img/ai3.png" style="width:40%">
     - Lalu pilih New Document
@@ -187,8 +187,6 @@ Deteksi error adalah menjaga kestabilan sistem dengan mendeteksi “error”, pe
 - Selama proses dieksekusi kadang kala diperlukan untuk me-load atau mengeksekusi program lain, disini diperlukan lagi suatu system calls. Juga ketika membuat suatu proses baru dan menghentikan sebuah proses. Ada juga system calls yang dipanggil ketika kita ingin meminta dan merubah atribut dari suatu proses. 
 - MS-DOS adalah contoh dari sistem single-tasking. MS-DOS menggunakan metoda yang sederhana dalam menjalankan program aan tidak menciptakan proses baru. Program di-load ke dalam memori, kemudian program dijalankan. Berkeley Unix adalah contoh dari sistem multi-tasking. Command Interpereter masih tetap bisa dijalankan ketika program lain dieksekusi. 
 
-<p align="center"><img src="foto3/1.jpg"></p>
-<p align="center"><b>Eksekusi MS-DOS</b></p>
 
 ## System Call Managemen Proses
 
@@ -225,7 +223,7 @@ disediakan oleh sistem operasi.
 
 ## **1. System Call di Command Prompt**
 
-<img src="img/cmd.png" style="width:40%">
+<img src="img/cmd.PNG" style="width:40%">
 
 - Cara membuat folder baru
     - ketik mkdir buat nama folder misal (SO)
@@ -237,15 +235,15 @@ disediakan oleh sistem operasi.
     - ketik cd SO
     - lalu tab dan tekan enter
     - maka akan tampil seperti gambar  :
-        - <img src="img/cm1.png" style="width:40%">
+        - <img src="img/cm1.PNG" style="width:40%">
     - lalu ketik dir
     - disitu sudah ada folder Latihan
-        - <img src="img/cm2.png" style="width:40%">
+        - <img src="img/cm2.PNG" style="width:40%">
 
 - Cara membuat file txt
     - ketik copy con nama file misal (Latihan1.txt)
-        - <img src="img/cm1.png" style="width:40%">
+        - <img src="img/cm1.PNG" style="width:40%">
     - lalu ketik dir
     - disitu sudah ada file dengan nama Tugas1.txt
-        - <img src="img/c1.png" style="width:40%">
+        - <img src="img/c1.PNG" style="width:40%">
 
