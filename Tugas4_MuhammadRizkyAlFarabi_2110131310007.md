@@ -9,7 +9,9 @@ Nim    : 2110131310007
 
 * MS DOS = fokus pada fungsional tertentu dan tidak dapt dibagi dalam beberapa modul.
 
-* UNIX = fokus pada setiap prosedur yang memanggil prosedur lainnya, sehingga menyebabkan tiap prosedur dapat saling berkomunikasi dan kernel berisikan semua layanan yang disediakan oleh sistem ke pengguna.
+* UNIX = fokus pada setiap prosedur yang memanggil prosedur lainnya, sehingga menyebabkan tiap prosedur dapat saling berkomunikasi dan kernel berisikan semua layanan yang disediakan oleh sistem ke pengguna.Berikut ini adalah skema struktur UNIX.
+
+<p align="center"><img src="img2/6.jpeg"><br></p>
 
 <p align="justify">Struktur sistem operasi monolitik hanya dapat digunakan pada beberapa perangkat keras saja. Hal ini disebabkan karena sistem operasi monolotik dilengkapi dengan operasi dual mode dan pelayanan system calls. Namun, Intel 8088 tidak dapat menggunakan dual mode sehingga tidak akan ada proteksi pada perangkat keras yang digunakan.
 
@@ -150,6 +152,22 @@ yang baru saja didebug, karena lapisan dibawahnya sudah di debug.
 - Mudah diandalkan
 - Hanya menggunakan sedikit kode
 - Lebih aman
+
+<p align="justify">
+Komponen-komponen sistem operasi yang berada di luar kernel mikro diimplementasikan sebagai
+<i>server process</i> dan berkomunikasi dengan <i>message passing</i> via kernel mikro. Misalnya jika user ingin
+membuat berkas baru, dia mengirim pesan ke <i>file system server</i>, atau jika ingin membuat proses baru, dia mengirimkan pesan ke <i>process server</i>.</p>
+
+<p align="center"><img src="img2/5.jpeg"><br>Struktur Kernel Mikro</p>
+
+<p align="justify">Beberapa kelebihan kernel mikro:</p>
+
+1. _*Interface*_ yang seragam. Proses tidak lagi dibedakan, baik antara kernel-level maupun userlevel, karena semuanya berkomunikasi via message passing.
+2. _*Extensibility*_. Bisa menambahkan fitur-fitur baru tanpa perlu melakukan kompilasi ulang.
+3. _*Flexibility*_. Fitur-fitur yang sudah ada bisa dikurangi, atau dimodifikasi sesuai dengan kebutuhan sehingga menjadi lebih efisien. Misalnya tidak semua pengguna membutuhkan security yang sangat ketat, atau kemampuan untuk melakukan distributed computing.
+4. _*Portability*_. Pada kernel mikro, semua atau sebagian besar kode yang prosesor-spesifik berada di dalamnya. Jadi, proses porting ke prosesor lain bisa dilakukan dengan relatif sedikit usaha. Pada kelompok desktop misalnya, tampaknya dominasi Intel makin kuat. Tapi, sampai seberapa lama itu bisa bertahan? Karena itulah, portability adalah salah satu isu yang sangat penting.
+5. _*Reliability*_. Semakin besar suatu software, maka tentulah semakin sulit untuk menjamin reliability-nya. Desain dengan pendekatan berlapis sangatlah membantu, dan dengan pendekatan kernel mikro bisa lebih lagi. Kernel mikro dapat dites secara ekstensif .Karena dia menggunakan API yang sedikit, maka bisa meningkatkan kualitas code di luar kernel.
+6. _*Support for object-oriendted OS*_. Model kernel mikro sangat sesuai untuk mengembangkan sistem operasi yang berbasis object-oriented. Contoh sistem operasi yang menggunakan kernel mikro adalah MacOS X dan QNX.
 
 <p align = "justify">Walaupun demikian, struktur sistem mikro kernel sering mengalami overhead kinerja dari komunikasi ruang ke pengguna ruang kernel. Pastikan anda sudah mempertimbangkan kekurangan ini sebelum menerapkan struktur sistem mikro kernel. Beberapa sistem operasi yang menerapkan mikro kernel adalah :</p>
 
